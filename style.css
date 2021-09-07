@@ -1,0 +1,355 @@
+/*共通*/
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+a:hover {
+    opacity: .7;
+    transition: .3s;
+    text-decoration:none;
+}
+li {
+    list-style: none;
+}
+body {
+    color: #000;
+    font-family:'ヒラギノ角ゴシック';
+}
+img {
+    width: 100%;
+}
+
+/*header*/
+header{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Georgia;
+}
+.header-box{
+    padding:30px 11px;
+}
+.header-logo a{
+    display: inline-block;
+    margin-bottom: 100px;
+    padding: 20px 60px;
+    border: 1px solid #707070;
+    letter-spacing: 5px;
+}
+.header-list ul{
+    line-height: 4rem;
+    margin-bottom: 60px;
+}
+.header-list ul li a{
+    font-size: 20px;
+}
+.phone-number p{
+    line-height: 2.5rem;
+    font-size: 16px;
+}
+.phone-number p:last-of-type{
+    padding-left: 30px;
+}
+
+/*main*/
+main{
+    width: 80%;
+    margin-left: auto;
+}
+.main-logo p{
+    text-align: center;
+    margin: 80px;
+    font-size: 40px;
+    font-weight: bold;
+}
+/*first-view*/
+.first-view{
+    background-image: url(./image/first-view.jpeg);
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+.first-view-text{
+    text-align: center;
+    padding: 220px 0px;
+}
+.first-view-text h1{
+    font-size: 60px;
+    margin-bottom: 120px;
+}
+.first-view-text p{
+    font-size: 40px;
+    line-height: 5rem;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+/*jisseki*/
+.jisseki-item ul{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.jisseki-item ul li {
+    background-image: url(./image/jisseki.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin-top: 30px;
+    color: #fff;
+}
+.jisseki-item ul li p{
+    padding-bottom: 5px;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+.jisseki-item ul li p span{
+    color: #FF0000;
+}
+/*koe*/
+.koe-item{
+    width: 80%;
+    margin: 0 auto;
+}
+.koe-item ul{
+    color: #fff;
+    background-color: #000;
+    padding: 40px;
+}
+.koe-item ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.koe-item ul li:first-of-type{
+    margin-bottom: 60px;
+}
+.koe-item ul li img{
+    width: 48%;
+    border-radius:100px;
+}
+.koe-text{
+    width: 48%;
+    margin-top: 40px;
+}
+.koe-text h2{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.koe-text p{
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+/*ryoukin*/
+.ryoukin-item{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+}
+th{
+    padding: 20px;
+    border: 2px solid #fff;
+}
+td{
+    padding: 20px;
+    border: 2px solid #fff;
+}
+th span{
+    color: #FFE200;
+}
+td span{
+    color: #FFE200;
+}
+
+/*otoiawase*/
+.otoiawase-item{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.otoiawase-item p{
+    padding-bottom: 10px;
+}
+.name{
+    padding: 20px;
+}
+.number{
+    padding: 20px;
+}
+.mail{
+    padding: 20px;
+}
+.text{
+    padding: 20px;
+}
+textarea{
+    height: 80px;
+}
+
+/*footer*/
+.footer-text p{
+    text-align: center;
+    background-color:#000;
+    color: #fff;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+/*responsive*/
+@media(max-width:520px){
+
+    /*header*/
+    header{
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+    }
+    .header-list{
+        display: none;
+    }
+    .phone-number{
+        display: none;
+    }
+    .header-box{
+        padding: 0;
+    }
+    .header-logo{
+        text-align: center;
+    }
+    .header-logo a{
+        border: none;
+        padding: 20px;
+    }
+    
+    /*main*/
+    main{
+        width: 100%;
+    }
+    .main-logo p{
+        margin: 30px;
+        font-size: 25px;
+    }
+    /*first-view*/
+    .first-view{
+        background-position: center;
+        height: 50vh;
+    }
+    .first-view-text{
+        padding-top:100px;
+    }
+    .first-view-text h1{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .first-view-text p{
+        font-size: 16px;
+        line-height: 2rem;
+        letter-spacing: 4px;
+    }
+    
+    /*jisseki*/
+    .jisseki-item ul{
+        width: 100%;
+    }
+    .jisseki-item ul li {
+        padding: 40px;
+        margin-top: 30px;
+    }
+    .jisseki-item ul li p{
+        padding-bottom: 5px;
+        font-size: 20px;
+        border-bottom: none;
+    }
+
+    /*koe*/
+    .koe-item{
+        width: 100%;
+    }
+    .koe-item ul{
+        padding: 40px 40px 0px 40px;
+    }
+    .koe-item ul li{
+        display: initial;
+    }
+    .koe-item ul li img{
+        width: 100%;
+        border-radius:100px;
+    }
+    .koe-text{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .koe-text h2{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .koe-text p:first-of-type{
+        padding-bottom: 30px;
+    }
+
+    /*ryoukin*/
+    .ryoukin-item{
+        width:100% ;
+    }
+    th{
+        padding: 10px;
+        border: 2px solid #fff;
+    }
+    td{
+        padding: 10px;
+        border: 2px solid #fff;
+    }
+
+    /*otoiawase*/
+    .otoiawase-item{
+        width: 100%;
+        padding: 20px;
+    }
+    .otoiawase-item p{
+        padding-bottom: 10px;
+    }
+    .name{
+        padding: 20px;
+    }
+    .number{
+        padding: 20px;
+    }
+    .mail{
+        padding: 20px;
+    }
+    .text{
+        padding: 20px;
+    }
+    textarea{
+        height: 80px;
+    }
+
+    /*footer*/
+    .footer-text p{
+        margin-top: 40px;
+        padding: 20px;
+    }
+}
+
+
+
+
